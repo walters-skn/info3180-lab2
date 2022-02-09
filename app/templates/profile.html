@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="card">
+    <div class="card-content">
+        <div class="top-info">
+            <img class="profile" src="{{url_for('static', filename='profilepic.png')}}" />
+            <h2> Joy Douglas</h2>
+            <p> @joyjoy </p>
+            <p> Kingston, Jamaica </p>
+            <p> {{formated_date}}</p>
+        </div>
+        <!-- <div class="bottom"> -->
+            <div class="bio">
+                <p>
+                    Aspiring Future Web Developer. Contact me for any future projects.
+                    <br>
+                    Creativity Is Excellence!
+                </p>
+            </div>   
+
+            <div class="row">
+                <div id="row-details">
+                    <ul> 7 </ul>
+                    <ul id="row info"> Post </ul>
+                </div>
+
+                <div id="row-details">
+                    <ul> 100 </ul>
+                    <ul id="row info"> Following </ul>
+                </div>
+
+                <div id="row-details">
+                    <ul> 250 </ul>
+                    <ul id="row info"> Followers </ul>
+                </div>
+
+            </div> 
+            <br>
+            <button type="button" class="btn btn-">Follow</button>
+
+    <!-- </div> -->
+</div>
+
+
+<!-- <div class="container">
+    <div class="top-card">
+        <div class= "image-container">
+            <img src="{{ url_for('static', filename='profile.png') }}" >
+        </div>
+        <h2>Joy Walter</h2>
+        <p> @joyjoy</p>
+        <p> Kingston, Jamaica</p>
+        <p> Joined {{ date_joined }}</p>
+    </div>
+</div>
+
+<div class="bio">
+    <p> This is my first time creating a profile card so I am just trying a little something for marks. :) </p>
+</div>
+
+
+<button type="button" class="btn btn-">Follow</button>
+
+</div>
+ -->
+{% endblock %}
